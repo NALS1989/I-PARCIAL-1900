@@ -32,7 +32,25 @@ namespace Ejercicios
             int [,] matriz2 = new int[4, 6];
 
 
-            for ( int fila=0; fila<matriz2.GetLength; fila++ ) 
+            for ( int fila=0;fila<matriz2.GetLength(0); fila++ )
+
+            {
+                for ( int col =0; col < matriz2.GetLength(0); col++ )
+                {
+                    matriz2 [fila, col] = aleatorio.Next(0,100);   
+                }
+
+            }
+
+            //mostrar la matriz en el listbox
+
+            for ( int fila= 0; fila < matriz2.GetLength(0); fila++ )
+            {
+                for (int col=0; col < matriz2.GetLongLength(1);col++)
+                {
+                    listBox1.Items.Add("La posicion:["+ fila + "," + col + "]="+ matriz2[fila,col]);
+                }
+            }
 
 
 
