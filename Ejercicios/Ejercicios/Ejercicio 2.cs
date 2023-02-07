@@ -43,6 +43,7 @@ namespace Ejercicios
             decimal num1 = Convert.ToDecimal(Numero1textBox1.Text);
             decimal num2 = Convert.ToDecimal(Numero2textBox2.Text);
 
+
             Resultadolabel3.Text = calcular2(num1, num2).ToString();
         }
 
